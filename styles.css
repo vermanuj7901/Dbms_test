@@ -1,16 +1,29 @@
+
+/* @media screen and (min-width:300px){ */
+    /* <div class="body-content" id="content"></div>
+    <%@ include file="common/aside.jsp"%>
+<%@ include file="common/footer.jsp"%> */
 .bg_img{
+    align-items: center;
+    display: flex;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height:100%;
     left: 0px;
     top: 0px;
+    overflow: hidden;
     
     background: url(1457553.jpg);
     opacity: 0.3;
 }
 
 .bg{
-    display: flex;
+    /* width:fit-content; */
+    /* height:fit-content; */
+    /* display:flex; */
+    height: 100vh;
+    width: 100vh;
+
 }
 
 .heading{
@@ -101,12 +114,12 @@ color: black;
 }
 
 .imdb{
-    position: absolute;
-width: 229px;
+position: relative;
+width: 110px;
 height: 48px;
-left: 1136px;
-top: 75px;
-
+left: 60%;
+top: 40%;
+overflow: hidden;
 background: #FBFF1E;
 border-radius: 17px;
 }
@@ -203,11 +216,17 @@ line-height: 24px;
 color: #FFFFFF;
 }
 
+/* .H{
+    position: absolute;
+    top:447px ;
+    left: 10%;
+} */
+
 .Hero{
     position: absolute;
 width: 48px;
 height: 24px;
-left: 71px;
+left: 15%;
 top: 407px;
 
 font-family: 'Poppins';
@@ -218,14 +237,14 @@ line-height: 24px;
 /* identical to box height */
 
 
-color: #FFFFFF;
+ color: #FFFFFF;
 }
 
 .Hero_pic{
     position: absolute;
 width: 104px;
 height: 150px;
-left: 43px;
+left:15%;
 top: 447px;
 
 background: url(image.png);
@@ -236,7 +255,7 @@ border-radius: 50px;
     position: absolute;
 width: 84px;
 height: 24px;
-left: 53px;
+left: 15%;
 top: 597px;
 
 font-family: 'Poppins';
@@ -244,17 +263,14 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-/* identical to box height */
-
-
 color: #FFFFFF;
-}
+} 
 
 .Heroin{
     position: absolute;
 width: 70px;
 height: 24px;
-left: 505px;
+left: 45%;
 top: 407px;
 
 font-family: 'Poppins';
@@ -272,7 +288,7 @@ color: #FFFFFF;
     position: absolute;
 width: 104px;
 height: 150px;
-left: 488px;
+left: 45%;
 top: 447px;
 
 background: url(image.png);
@@ -283,7 +299,7 @@ border-radius: 50px;
     position: absolute;
 width: 102px;
 height: 24px;
-left: 490px;
+left: 45%;
 top: 597px;
 
 font-family: 'Poppins';
@@ -301,7 +317,7 @@ color: #FFFFFF;
     position: absolute;
 width: 70px;
 height: 24px;
-left: 956px;
+left: 75%;
 top: 407px;
 
 font-family: 'Poppins';
@@ -319,7 +335,7 @@ color: #FFFFFF;
     position: absolute;
 width: 112px;
 height: 150px;
-left: 927px;
+left: 75%;
 top: 447px;
 
 background: url(image.png);
@@ -330,7 +346,7 @@ border-radius: 50px;
     position: absolute;
 width: 104px;
 height: 24px;
-left: 932px;
+left: 75%;
 top: 597px;
 
 font-family: 'Poppins';
@@ -342,4 +358,62 @@ line-height: 24px;
 
 
 color: #FFFFFF;
+}
+/* } */
+
+@media screen and (max-width:600px) {
+    .bg_img{
+        position: absolute;
+    width: 375px;
+    height: 667px;
+    left: 0px;
+    top: 0px;
+    
+    background: url(1457553.jpg);
+    opacity: 0.3;
+    }
+
+    .imdb{
+        position: relative;
+        /* width: 70px; */
+        /* height: 30px; */
+        left: 20%;
+        top: 320px;
+        /* overflow: hidden; */
+        background: #FBFF1E;
+        border-radius: 17px;
+        }
+
+        .imdb_text{
+            position: relative;
+        width: 0px;
+        height: 0px;
+        left: 10px;
+        top: 0px;
+        
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size:100%;
+        line-height: 36px;
+        
+        color: #ffffff;
+        }
+        
+        .imdb_rating{
+            position: relative;
+        width: 37px;
+        height: 33px;
+        left: 1307px;
+        top: 83px;
+        
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        
+        color: #333333;
+        }
+    
 }
